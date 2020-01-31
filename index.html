@@ -25,16 +25,17 @@
             "genre": "Rock",
             "year": "1988"
         },-->
-      <span></span>
     </div>
 
     <script id="entry-template" type="text/x-handlebars-template">
       <div class="cd">
-        <h1>{{title}}</h1>
-        <span class="author">{{author}}</span>
-        <span class="genre">{{genre}}</span>
-        <span class="year">{{year}}</span>
-        <img src="{{poster}}" alt="">
+        <div class="">
+          <img class="album" src="{{poster}}" alt="image album">
+        </div>
+        <h1 class="title">{{title}}</h1>
+        <p class="author">{{author}}</p>
+        <p class="genre">{{genre}}</p>
+        <p class="year">{{year}}</p>
       </div>
     </script>
     <script src="js/script.js" charset="utf-8"></script>
