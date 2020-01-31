@@ -7,13 +7,23 @@ $(document).ready(function() {
       'url':'https://flynn.boolean.careers/exercises/api/array/music',
       'method': 'GET',
       'success': function (data) {
-        console.log(data);
+      //  console.log(data);
+        processData(data.response);
       },
-      'error': function (richiesta, stato, errori) {
-        alert('errore' + errors);
+      'error': function (request, state, errors) {
+        alert('error' + errors);
       }
     });
 
+//funzione che con un ciclo for riproduce il template
+    function processData (cds) {
+//  console.log(data);
+      for(var i = 0; i < cds.length; i++) {
+        var cd = cds[i];
+        console.log(cd);
+      }
+
+}
 
 
 
