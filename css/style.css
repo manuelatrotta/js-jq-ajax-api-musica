@@ -23,6 +23,10 @@ body{
   vertical-align: middle;
 }
 
+#select {
+  border: 1px solid green;
+  
+}
 .cds-container {
   display: flex;
   flex-direction: row;
